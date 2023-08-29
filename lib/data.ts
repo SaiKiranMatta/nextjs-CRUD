@@ -2,9 +2,28 @@ type Post = {
   id: string;
   title: string;
   desc: string;
-  date: Date;
+  date: string;
 };
-let posts: Post[] = [];
+let posts: Post[] = [
+  {
+    title: "t1",
+    desc: "d1",
+    date: "2023-08-29T11:38:10.760Z",
+    id: "1693309090760",
+  },
+  {
+    title: "t1",
+    desc: "d1",
+    date: "2023-08-29T11:38:11.560Z",
+    id: "1693309091560",
+  },
+  {
+    title: "t1",
+    desc: "d1",
+    date: "2023-08-29T11:38:14.207Z",
+    id: "1693309094207",
+  },
+];
 
 export const getPosts = () => posts;
 
