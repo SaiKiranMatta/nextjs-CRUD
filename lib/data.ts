@@ -32,7 +32,7 @@ export const addPost = (post: Post) => {
 };
 
 export const deletePost = (id: string) => {
-  posts.filter((post) => post.id !== id);
+  posts = posts.filter((post) => post.id !== id);
 };
 
 export const updatePost = (id: string, title: string, desc: string) => {
